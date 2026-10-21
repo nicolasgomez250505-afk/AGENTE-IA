@@ -13,7 +13,7 @@ def preguntar_ia(pregunta):
         El texto generado por Gemini.
     """
     respuesta = cliente.models.generate_content(
-        model="gemini-3.8-flash",
+        model="gemini-3.5-flash-lite",
 
         contents=pregunta
     )
