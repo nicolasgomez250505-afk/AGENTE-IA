@@ -221,3 +221,31 @@ def corregir_arquitectura(componentes_proyecto):
         lineas.append(f"- {componente}: {recomendaciones[componente]}")
  
     return "\n".join(lineas)
+
+def integrar_arquitectura(nombre_proyecto):
+    """Muestra cómo se conectan los componentes principales del proyecto.
+ 
+    Parámetros:
+        nombre_proyecto: nombre del sistema que se desea integrar.
+ 
+    Retorna:
+        Un texto con el flujo general de integración.
+    """
+    return "\n".join([
+        f"INTEGRACIÓN DEL PROYECTO: {nombre_proyecto}",
+        "========================================",
+        "",
+        "WEB / MÓVIL",
+        "     |",
+        "     v",
+        "    API",
+        "     |",
+        "     v",
+        "  BACKEND",
+        "     |",
+        "     v",
+        "BASE DE DATOS",
+        "",
+        "CIBERSEGURIDAD: transversal a toda la solución."
+    ])
+
