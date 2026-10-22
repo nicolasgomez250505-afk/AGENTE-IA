@@ -79,15 +79,94 @@ def obtener_historial():
     return memoria["historial"]
  
  
+def detectar_proyecto(solicitud):
+    """Detecta si el usuario está definiendo un proyecto y guarda su nombre.
+ 
+    Parámetros:
+        solicitud: texto escrito por el usuario.
+ 
+    Retorna:
+        El nombre detectado o None.
+    """
+    texto = solicitud.strip()
+    texto_minuscula = texto.lower()
+ 
+    expresiones = [
+        "estoy desarrollando ",
+        "estoy diseñando ",
+        "estoy construyendo ",
+        "estoy creando ",
+        "mi proyecto es ",
+        "mi proyecto consiste en "
+    ]
+ 
+    for expresion in expresiones:
+        if expresion in texto_minuscula:
+            posicion = texto_minuscula.find(
+                expresion
+            )
+ 
+            proyecto = texto[
+                posicion + len(expresion):
+            ]
+ 
+            cortes = [
+                " para ",
+                " que permita ",
+                " que permite ",
+                ".",
+                ","
+            ]
+ 
+            proyecto_minuscula = proyecto.lower()
+ 
+            for corte in cortes:
+                if corte in proyecto_minuscula:
+                    posicion_corte = (
+                        proyecto_minuscula.find(corte)
+                    )
+ 
+                    proyecto = proyecto[
+                        :posicion_corte
+                    ]
+ 
+                    break
+ 
+            proyecto = proyecto.strip()
+ 
+            if proyecto.lower().startswith("un "):
+                proyecto = proyecto[3:]
+ 
+            elif proyecto.lower().startswith("una "):
+                proyecto = proyecto[4:]
+ 
+            if proyecto != "":
+                guardar_proyecto(proyecto)
+                return proyecto
+ 
+    return None
+ 
+ 
 def construir_contexto(limite=5):
-    """Convierte las últimas interacciones en contexto de texto."""
+    """Construye contexto con proyecto actual e historial reciente."""
     historial = memoria["historial"]
+    proyecto_actual = memoria["proyecto_actual"]
+    contexto = ""
+ 
+    if proyecto_actual:
+        contexto += (
+            "\nPROYECTO ACTUAL:\n"
+            + proyecto_actual
+            + "\n"
+        )
  
     if not historial:
+        if contexto != "":
+            return contexto
+ 
         return "No existen conversaciones anteriores."
  
     interacciones_recientes = historial[-limite:]
-    contexto = ""
  
     for interaccion in interacciones_recientes:
         contexto += (

@@ -261,6 +261,19 @@ def decidir_herramienta(solicitud):
     texto = solicitud.lower()
  
     if (
+        "qué sabes de mi proyecto" in texto
+        or "que sabes de mi proyecto" in texto
+        or "qué sabes actualmente de mi proyecto" in texto
+        or "que sabes actualmente de mi proyecto" in texto
+        or "mostrar estado del proyecto" in texto
+        or "muestra el estado del proyecto" in texto
+        or "resumen del proyecto" in texto
+        or "información del proyecto" in texto
+        or "informacion del proyecto" in texto
+    ):
+        return "estado"
+ 
+    elif (
         "enseña" in texto
         or "enseñar" in texto
         or "explica" in texto
@@ -299,6 +312,7 @@ def decidir_herramienta(solicitud):
  
     else:
         return "ia"
+
  
  
 def detectar_componente(solicitud):

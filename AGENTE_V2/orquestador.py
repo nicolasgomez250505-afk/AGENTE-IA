@@ -13,8 +13,30 @@ from modelo_ia import preguntar_ia
  
 from memoria_agente import (
     guardar_interaccion,
-    construir_contexto
+    construir_contexto,
+    detectar_proyecto
 )
+ 
+from estado_proyecto import (
+    actualizar_estado_desde_solicitud,
+    construir_resumen_proyecto
+)
+ 
+ 
+ 
+def construir_contexto_completo():
+    """Une el estado estructurado del proyecto con el historial reciente."""
+    resumen_proyecto = construir_resumen_proyecto()
+    contexto_conversacion = construir_contexto()
+ 
+    contexto_completo = (
+        resumen_proyecto
+        + "\n\nHISTORIAL RECIENTE\n"
+        + "=================\n"
+        + contexto_conversacion
+    )
+ 
+    return contexto_completo
  
  
 def crear_resultado(
@@ -51,13 +73,27 @@ def ejecutar_agente(
             "respuesta": "Debes escribir una solicitud."
         }
  
-    herramienta = decidir_herramienta(solicitud)
+    detectar_proyecto(
+        solicitud
+    )
+ 
+    actualizar_estado_desde_solicitud(
+        solicitud
+    )
+ 
+    herramienta = decidir_herramienta(
+        solicitud
+    )
  
     if herramienta == "ensenar":
-        componente = detectar_componente(solicitud)
+        componente = detectar_componente(
+            solicitud
+        )
  
         if componente:
-            respuesta = ensenar_componente(componente)
+            respuesta = ensenar_componente(
+                componente
+            )
  
             return crear_resultado(
                 solicitud,
@@ -66,7 +102,7 @@ def ejecutar_agente(
                 respuesta
             )
  
-        contexto = construir_contexto()
+        contexto = construir_contexto_completo()
  
         respuesta = preguntar_ia(
             solicitud,
@@ -81,7 +117,9 @@ def ejecutar_agente(
         )
  
     elif herramienta == "generar":
-        respuesta = generar_arquitectura(solicitud)
+        respuesta = generar_arquitectura(
+            solicitud
+        )
  
         return crear_resultado(
             solicitud,
@@ -109,7 +147,9 @@ def ejecutar_agente(
             entrada_componentes
         )
  
-        respuesta = validar_arquitectura(componentes)
+        respuesta = validar_arquitectura(
+            componentes
+        )
  
         return crear_resultado(
             solicitud,
@@ -137,7 +177,9 @@ def ejecutar_agente(
             entrada_componentes
         )
  
-        respuesta = corregir_arquitectura(componentes)
+        respuesta = corregir_arquitectura(
+            componentes
+        )
  
         return crear_resultado(
             solicitud,
@@ -147,7 +189,9 @@ def ejecutar_agente(
         )
  
     elif herramienta == "integrar":
-        respuesta = integrar_arquitectura(solicitud)
+        respuesta = integrar_arquitectura(
+            solicitud
+        )
  
         return crear_resultado(
             solicitud,
@@ -157,7 +201,7 @@ def ejecutar_agente(
         )
  
     else:
-        contexto = construir_contexto()
+        contexto = construir_contexto_completo()
  
         respuesta = preguntar_ia(
             solicitud,
