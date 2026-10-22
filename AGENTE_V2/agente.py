@@ -249,3 +249,103 @@ def integrar_arquitectura(nombre_proyecto):
         "CIBERSEGURIDAD: transversal a toda la solución."
     ])
 
+def decidir_herramienta(solicitud):
+    """Decide qué capacidad debe utilizar el agente.
+ 
+    Parámetros:
+        solicitud: texto escrito por el usuario.
+ 
+    Retorna:
+        El nombre de la herramienta seleccionada.
+    """
+    texto = solicitud.lower()
+ 
+    if (
+        "enseña" in texto
+        or "enseñar" in texto
+        or "explica" in texto
+        or "qué es" in texto
+    ):
+        return "ensenar"
+ 
+    elif (
+        "generar" in texto
+        or "crear arquitectura" in texto
+        or "diseñar arquitectura" in texto
+        or "proponer arquitectura" in texto
+    ):
+        return "generar"
+ 
+    elif (
+        "validar" in texto
+        or "verificar" in texto
+        or "revisar componentes" in texto
+    ):
+        return "validar"
+ 
+    elif (
+        "corregir" in texto
+        or "mejorar arquitectura" in texto
+        or "qué falta" in texto
+    ):
+        return "corregir"
+ 
+    elif (
+        "integrar" in texto
+        or "conectar componentes" in texto
+        or "integración" in texto
+    ):
+        return "integrar"
+ 
+    else:
+        return "ia"
+ 
+ 
+def detectar_componente(solicitud):
+    """Identifica el componente de arquitectura mencionado por el usuario.
+ 
+    Parámetros:
+        solicitud: texto escrito por el usuario.
+ 
+    Retorna:
+        El nombre normalizado del componente o None.
+    """
+    texto = solicitud.lower()
+ 
+    if (
+        "base de datos" in texto
+        or "bases de datos" in texto
+        or "bd" in texto
+    ):
+        return "base de datos"
+ 
+    elif (
+        "ciberseguridad" in texto
+        or "seguridad" in texto
+    ):
+        return "ciberseguridad"
+ 
+    elif (
+        "aplicación web" in texto
+        or "aplicacion web" in texto
+        or " web" in texto
+    ):
+        return "web"
+ 
+    elif (
+        "aplicación móvil" in texto
+        or "aplicacion movil" in texto
+        or "móvil" in texto
+        or "movil" in texto
+    ):
+        return "movil"
+ 
+    elif (
+        "integración" in texto
+        or "integracion" in texto
+        or "api" in texto
+    ):
+        return "integracion"
+ 
+    else:
+        return None

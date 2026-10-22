@@ -1,0 +1,21 @@
+{
+    "proyecto_actual": null,
+    "historial": [
+        {
+            "solicitud": "Prueba persistente",
+            "respuesta": "OK"
+        },
+        {
+            "solicitud": "cuantos balones de oro tiene kylian mbappe",
+            "respuesta": "Hola. Como Agente Arquitecto Digital, mi misión principal es orientarte en el diseño, desarrollo y arquitectura de sistemas de información (bases de datos, ciberseguridad, aplicaciones web y móviles, e integración).\n\nRespecto a tu pregunta sobre cuántos balones de oro tiene Kylian Mbappé: **no tengo información sobre temas deportivos**, ya que mi especialidad es exclusivamente la ingeniería de sistemas y la tecnología. \n\nSi estás diseñando un sistema, una base de datos para estadísticas deportivas, o cualquier otra solución digital y necesitas ayuda con su arquitectura, con gusto puedo guiarte en el proceso. ¿En qué proyecto estás trabajando actualmente con tus estudiantes?"
+        },
+        {
+            "solicitud": "estoy trabajando en el diseño web",
+            "respuesta": "¡Hola! Qué excelente noticia. El diseño web es uno de los pilares fundamentales en la construcción de sistemas de información, ya que representa la **interfaz** con la que interactuarán los usuarios (lo que en arquitectura llamamos el *Frontend* o la capa de presentación).\n\nPara poder orientarte de la mejor manera y diseñar una arquitectura sólida junto a tus estudiantes, me gustaría conocer un poco más sobre lo que tienes en mente. ¿Podrías contarme brevemente?:\n\n1. **¿De qué trata el proyecto o sistema web que estás diseñando?** (Por ejemplo: ¿es una tienda en línea, un sistema escolar, un blog, un panel de control?).\n2. **¿Qué tecnologías tienen pensado utilizar o están aprendiendo?** (Por ejemplo: HTML/CSS/JavaScript básico, frameworks como React o Angular, o quizás herramientas sin código).\n3. **¿Ya tienen definido si este sitio web necesitará conectarse a una base de datos o a otros servicios?**\n\nUna vez que me compartas estos detalles, podremos empezar a estructurar la arquitectura paso a paso, viendo cómo se conecta el diseño web con los demás componentes del sistema. ¡Te leo!"
+        },
+        {
+            "solicitud": "cual era el proyecto en el que estaba trabajando?",
+            "respuesta": "Revisando nuestra conversación anterior, **no me habías mencionado aún un proyecto específico**. \n\nLo único que me indicaste es que estás **\"trabajando en el diseño web\"**, pero todavía no definimos la temática, los objetivos o las tecnologías de ese proyecto. \n\nComo mencionamos el diseño web, este forma parte de la **capa de aplicaciones web** (el *Frontend* o interfaz de usuario) dentro de la arquitectura de un sistema de información. \n\nPara poder recordarlo juntos o empezar a darle forma: ¿podrías contarme de qué trata o qué funcionalidad tendrá ese sitio web que estás diseñando con tus estudiantes? Así podré ayudarte a estructurarlo paso a paso."
+        }
+    ]
+}
