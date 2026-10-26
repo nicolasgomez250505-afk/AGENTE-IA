@@ -24,6 +24,10 @@
         {
             "solicitud": "que sabes actualmente de mi proyecto?",
             "respuesta": "Basado en la información registrada en nuestra conversación, esto es lo que sé actualmente sobre tu proyecto:\n\n* **Nombre del proyecto:** Sistema de biblioteca universitaria.\n* **Tipo de solución:** Aplicación web.\n* **Componentes principales:** Base de datos, aplicación web y la integración entre ellos.\n* **Tecnologías seleccionadas:** Python, PostgreSQL y FastAPI.\n* **Estado actual:** En definición (recientemente comenzamos a estructurar la organización del *backend*).\n\n¿Hay algún otro detalle que desees agregar o modificar en la ficha de tu proyecto?"
+        },
+        {
+            "solicitud": "que sabes actualmente de mi proyecto?",
+            "respuesta": "Basado en el historial de nuestra conversación, esto es lo que sé actualmente sobre tu proyecto:\n\n* **Nombre del proyecto:** Sistema de biblioteca universitaria.\n* **Tipo de solución:** Aplicación web.\n* **Componentes principales:** Base de datos, aplicación web y la integración entre ellos.\n* **Tecnologías seleccionadas:** Python, PostgreSQL y FastAPI.\n* **Estado actual:** En definición (recientemente estuvimos organizando la estructura del *backend*).\n\n¿Hay algún otro detalle que desees agregar, modificar o sobre el cual quieras que avancemos en este momento?"
         }
     ],
     "datos_proyecto": {

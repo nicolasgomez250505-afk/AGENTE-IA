@@ -1,0 +1,26 @@
+{
+  "total": 2,
+  "por_dominio": {
+    "base_datos": 2
+  },
+  "historial": [
+    {
+      "fecha_hora": "2026-10-26T11:36:38",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "de que sirve la ciberserguridad",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-26T11:36:41",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "de que sirve la ciberserguridad",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    }
+  ],
+  "respuestas_locales": 0,
+  "respuestas_locales_por_dominio": {}
+}
