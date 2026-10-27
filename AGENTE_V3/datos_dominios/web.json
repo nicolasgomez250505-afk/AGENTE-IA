@@ -2,9 +2,82 @@
   "nombre": "Aplicaciones Web",
   "grupo": "Grupo 3",
   "descripcion": "Agente especializado en diseño y validación de soluciones accesibles desde navegador.",
-  "ensenar": {},
-  "arquitectura": [],
-  "requisitos": [],
-  "correcciones": {},
-  "integracion": []
+  "ensenar": {
+    "URL": "Una URL (Uniform Resource Locator o Localizador Uniforme de Recursos) es la dirección única que permite identificar y acceder a un recurso específico en Internet, como una página web, una imagen, un archivo o un vídeo.",
+    "Frontend": "Es la parte de una aplicación web con la que interactúa directamente el usuario. Incluye los botones, formularios, menús, imágenes y pantallas. Por ejemplo, en una tienda virtual, el frontend permite ver los productos, agregarlos al carrito y consultar el precio. Normalmente se desarrolla con HTML, CSS y JavaScript.",
+    "Backend": "Es la parte que funciona detrás de la interfaz visible. Procesa las solicitudes, aplica las reglas del negocio, consulta datos y comprueba permisos. Por ejemplo, cuando un usuario inicia sesión, el backend verifica sus credenciales. Puede desarrollarse con Python, Java, JavaScript mediante Node.js, C# y otros lenguajes.",
+    "HTML": "HTML significa HyperText Markup Language, o lenguaje de marcado de hipertexto. Se utiliza para organizar el contenido de una página web mediante elementos como títulos, párrafos, imágenes, enlaces y formularios. HTML define la estructura del contenido, pero por sí solo no proporciona todas las funciones de diseño e interacción de una página moderna.",
+    "CSS": "CSS significa Cascading Style Sheets, u hojas de estilo en cascada. Define la presentación visual de una página: colores, tipografías, márgenes, tamaños y distribución de elementos. Si HTML crea la estructura de una tarjeta de producto, CSS permite decidir su apariencia y cómo se organiza en la pantalla.",
+    "JavaScript": "Es un lenguaje de programación que permite agregar comportamiento a las páginas web. Puede responder a clics, validar formularios, actualizar información sin recargar toda la página y comunicarse con una API. Por ejemplo, puede mostrar un mensaje cuando el usuario deja vacío un campo obligatorio. También puede utilizarse en el backend mediante entornos como Node.js.",
+    "API": "API significa Application Programming Interface, o interfaz de programación de aplicaciones. Define cómo un sistema puede solicitar funciones o información a otro. En una aplicación web, el frontend puede utilizar una API para pedir los productos disponibles al backend. La API establece las operaciones y el formato de comunicación aceptados.",
+    "HTTP": "HTTP significa Hypertext Transfer Protocol, o protocolo de transferencia de hipertexto. Es un conjunto de reglas que permite intercambiar solicitudes y respuestas entre clientes y servidores web. Por ejemplo, un navegador envía una solicitud para consultar una página. HTTPS es la versión que protege la comunicación mediante cifrado TLS.",
+    "Base de datos": "Es una colección organizada de información que puede consultarse, modificarse y administrarse. Una aplicación de ventas puede almacenar clientes, productos, pedidos y pagos. La base de datos permite conservar la información entre sesiones, en lugar de perderla cuando el usuario cierra la página.",
+    "SQL": "SQL significa Structured Query Language, o lenguaje de consulta estructurada. Se utiliza para consultar y administrar información en bases de datos relacionales. Por ejemplo, una consulta SQL puede recuperar los productos cuyo precio sea inferior a un valor determinado. Algunos sistemas que utilizan SQL son PostgreSQL, MySQL y SQL Server.",
+    "Modelo cliente-servidor": "Es una forma de organizar la comunicación entre dos partes. El cliente solicita información o servicios y el servidor los proporciona. En una aplicación web, el navegador suele actuar como cliente y un servidor procesa las solicitudes. Por ejemplo, cuando consultas tus pedidos, el navegador solicita los datos al servidor.",
+    "Diseño adaptable (responsive)": "Es una técnica de diseño que adapta la distribución y presentación de una página al tamaño de la pantalla. Una página responsive puede mostrar varias columnas en un computador y reorganizarse en una sola columna en un celular. Esto facilita la lectura y el uso en distintos dispositivos.",
+    "Autenticación": "Es el proceso de comprobar la identidad de un usuario o sistema. Una aplicación puede utilizar contraseñas, códigos temporales o llaves de acceso. La autenticación permite verificar quién está intentando ingresar, pero no determina por sí sola todos los permisos que esa persona tendrá.",
+    "Autorización": "Es la comprobación de qué recursos y acciones puede utilizar un usuario. Por ejemplo, un administrador puede crear cuentas y un usuario normal solo puede consultar su propia información. La autorización debe comprobarse en el servidor, no únicamente ocultando botones en el frontend.",
+    "Validación de formularios": "Consiste en comprobar que los datos introducidos cumplan las reglas esperadas. Por ejemplo, verificar que un correo tenga un formato aceptable o que una cantidad sea positiva. Las comprobaciones del navegador mejoran la experiencia, pero el servidor también debe validar los datos antes de procesarlos.",
+    "Cifrado": "Es una técnica que transforma información mediante algoritmos y claves para proteger su confidencialidad. Por ejemplo, HTTPS cifra la comunicación entre el navegador y el servidor. El cifrado no sustituye otras medidas como la autorización, las copias de seguridad y la protección de las contraseñas.",
+    "CRUD": "CRUD representa Create, Read, Update y Delete: crear, consultar, actualizar y eliminar información. Son cuatro operaciones frecuentes en aplicaciones que administran datos. Por ejemplo, un sistema de inventario puede registrar un producto, mostrarlo, modificar su precio y eliminarlo cuando corresponda.",
+    "Framework": "Un framework es una estructura de desarrollo que proporciona herramientas, convenciones y componentes para construir software. Puede facilitar tareas comunes y evitar que el programador tenga que empezar desde cero. Por ejemplo, Django se utiliza para desarrollar aplicaciones web con Python y Angular para crear interfaces web.",
+    "Pruebas de software": "Son actividades que permiten comprobar si el programa funciona según lo esperado. Una prueba puede verificar que el inicio de sesión rechace una contraseña incorrecta o que una compra calcule correctamente el total. Las pruebas ayudan a encontrar errores antes de que afecten a los usuarios.",
+    "Despliegue": "El despliegue es el proceso de preparar y publicar una aplicación en un entorno donde pueda ejecutarse. Puede incluir configurar el servidor, las variables de entorno, el dominio y la conexión con la base de datos. Una aplicación terminada en el computador del desarrollador todavía no está necesariamente disponible para sus usuarios.",
+    "Manejo de errores": "Consiste en detectar y gestionar situaciones inesperadas sin dejar el sistema en un estado inseguro o confuso. Por ejemplo, si una consulta a la base de datos falla, la aplicación puede mostrar un mensaje comprensible y registrar detalles técnicos para su diagnóstico. No debe exponer contraseñas, claves secretas ni trazas internas a los usuarios."
+  },
+  "arquitectura": [
+    {
+      "nombre": "Frontend",
+      "descripcion": "Interfaz visual desarrollada con HTML, CSS y JavaScript o tecnologías equivalentes. Permite a los usuarios interactuar con el sistema."
+    },
+    {
+      "nombre": "Backend",
+      "descripcion": "Procesa las solicitudes, aplica las reglas del negocio y coordina las operaciones internas de la aplicación."
+    },
+    {
+      "nombre": "API REST",
+      "descripcion": "Expone operaciones mediante solicitudes HTTP y permite que el frontend u otros clientes se comuniquen con el backend."
+    },
+    {
+      "nombre": "Base de datos",
+      "descripcion": "Almacena y organiza usuarios, productos, transacciones y demás información necesaria para el funcionamiento del sistema."
+    },
+    {
+      "nombre": "Autenticación y autorización",
+      "descripcion": "Verifica la identidad de los usuarios y controla qué recursos y operaciones pueden utilizar."
+    },
+    {
+      "nombre": "Seguridad web",
+      "descripcion": "Incluye medidas como validación de entradas, protección de sesiones, gestión de permisos y uso de HTTPS."
+    },
+    {
+      "nombre": "Pruebas",
+      "descripcion": "Comprueba el funcionamiento de las operaciones, la comunicación entre componentes y el cumplimiento de los requisitos."
+    },
+    {
+      "nombre": "Despliegue e infraestructura",
+      "descripcion": "Proporciona el entorno donde se ejecuta la aplicación y permite configurar servicios, dominio, variables de entorno y conexiones."
+    }
+  ],
+  "requisitos": [
+    "Interfaz definida",
+    "Backend y lógica de negocio",
+    "Comunicación mediante API",
+    "Persistencia de datos",
+    "Seguridad"
+  ],
+  "correcciones": {
+    "Interfaz definida": "Definir las pantallas, los formularios, la navegación y las interacciones que necesita el usuario.",
+    "Backend y lógica de negocio": "Implementar los procesos, las reglas de negocio y el tratamiento de las solicitudes del sistema.",
+    "Comunicación mediante API": "Diseñar los endpoints, los métodos HTTP, los formatos de datos y las respuestas que intercambiarán el frontend y el backend.",
+    "Persistencia de datos": "Diseñar la estructura de la base de datos, sus entidades, atributos, relaciones y operaciones necesarias.",
+    "Seguridad": "Incorporar validación de entradas, autenticación cuando corresponda, autorización, protección de datos y comunicaciones HTTPS."
+  },
+  "integracion": [
+    "El frontend debe comunicarse con el backend mediante solicitudes y respuestas con formatos definidos para intercambiar información correctamente.",
+    "La API debe establecer endpoints, métodos HTTP, parámetros y formatos de respuesta que permitan la comunicación entre los componentes de la aplicación web.",
+    "El backend debe conectarse con la base de datos para consultar, registrar, actualizar y eliminar información de forma controlada, protegiendo las credenciales de acceso.",
+    "Los componentes deben aplicar los controles de seguridad correspondientes, incluyendo validación de datos, verificación de permisos y protección de las comunicaciones mediante HTTPS.",
+    "La integración debe comprobarse mediante pruebas que verifiquen la comunicación entre componentes, las operaciones con la base de datos y el manejo de errores."
+  ]
 }

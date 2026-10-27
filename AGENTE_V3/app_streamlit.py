@@ -10,11 +10,15 @@ Esta interfaz permite:
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 from typing import Any, cast
 
 import streamlit as st
+import streamlit.components.v1 as components
+
+from voz import html_voz, limpiar_para_voz, transcribir_audio
 
 from conocimiento_dominios import (
     DOMINIOS,
@@ -236,6 +240,7 @@ st.sidebar.markdown(
 PAGINAS: list[str] = [
     "🏠 Inicio",
     "🧪 Probar agente",
+    "🎙️ Comando por voz",
     "📚 Alimentar dominio",
     "📖 Biblioteca del grupo",
     "🧠 Revisar aprendizajes IA",
@@ -547,6 +552,125 @@ elif pagina == "🧪 Probar agente":
 # ---------------------------------------------------------
 # ALIMENTAR DOMINIO
 # ---------------------------------------------------------
+elif pagina == "🎙️ Comando por voz":
+
+    st.markdown(
+        '<div class="big-title">'
+        "Comando por voz"
+        "</div>",
+        unsafe_allow_html=True,
+    )
+
+    st.caption(
+        f"Habla con el agente de: {nombre_dominio}. "
+        "Pulsa el micrófono, di tu pregunta y púlsalo "
+        "de nuevo para terminar."
+    )
+
+    permitir_ia_voz = st.toggle(
+        "Permitir Gemini únicamente cuando "
+        "la base local no tenga una respuesta "
+        "suficiente",
+        value=True,
+        key="voz_permitir_ia",
+    )
+
+    leer_voz = st.toggle(
+        "Leer la respuesta en voz alta",
+        value=True,
+        key="voz_leer",
+    )
+
+    audio = st.audio_input(
+        "Graba tu comando",
+        key="voz_audio",
+    )
+
+    if audio is not None:
+
+        audio_bytes = audio.getvalue()
+
+        huella = hashlib.sha256(
+            audio_bytes
+        ).hexdigest()
+
+        if st.session_state.get("voz_huella") != huella:
+
+            st.session_state["voz_huella"] = huella
+
+            with st.spinner("Escuchando..."):
+
+                texto_escuchado, error_voz = transcribir_audio(
+                    audio_bytes
+                )
+
+            if error_voz:
+
+                st.session_state["voz_resultado"] = {
+                    "error": error_voz,
+                }
+
+            else:
+
+                with st.spinner("Pensando..."):
+
+                    resultado_voz = consulta_libre(
+                        dominio,
+                        texto_escuchado,
+                        permitir_ia=permitir_ia_voz,
+                    )
+
+                st.session_state["voz_resultado"] = {
+                    "pregunta": texto_escuchado,
+                    "resultado": resultado_voz,
+                    "leer": leer_voz,
+                }
+
+    guardado = _diccionario(
+        st.session_state.get("voz_resultado")
+    )
+
+    if guardado:
+
+        if "error" in guardado:
+
+            st.warning(
+                _texto(guardado.get("error"))
+            )
+
+        else:
+
+            st.markdown(
+                "#### 🗣️ Esto fue lo que entendí"
+            )
+
+            st.info(
+                _texto(guardado.get("pregunta"))
+            )
+
+            resultado_guardado = _diccionario(
+                guardado.get("resultado")
+            )
+
+            _mostrar_resultado(
+                resultado_guardado
+            )
+
+            texto_para_leer = limpiar_para_voz(
+                _texto(
+                    resultado_guardado.get("respuesta")
+                )
+            )
+
+            if texto_para_leer:
+
+                components.html(
+                    html_voz(
+                        texto_para_leer,
+                        bool(guardado.get("leer", True)),
+                    ),
+                    height=60,
+                )
 
 elif pagina == "📚 Alimentar dominio":
 

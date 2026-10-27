@@ -26,5 +26,33 @@
     "concepto_final": "",
     "contenido_final": "",
     "fecha_revision": ""
+  },
+  {
+    "id": "A0003",
+    "fecha_hora": "2026-10-27T11:32:26",
+    "dominio": "web",
+    "capacidad": "consulta libre",
+    "consulta": "quien es mi padre?",
+    "concepto_sugerido": "quien es mi padre",
+    "respuesta_ia": "Como Agente Arquitecto Digital enfocado en el diseño y validación de sistemas de información y aplicaciones web, debo informarte que no dispongo de información personal ni familiar sobre los usuarios. \n\nMi función es orientarte en el desarrollo de arquitecturas de software, estructuración de bases de datos, ciberseguridad, aplicaciones web y móviles, y la integración entre componentes (como la comunicación entre el **Frontend** y el **Backend** a través de una **API REST**).\n\nSi tienes alguna duda sobre el diseño de sistemas, el modelo cliente-servidor o el desarrollo de aplicaciones web, estaré encantado de ayudarte paso a paso.",
+    "motivo": "La base local no contenía una respuesta suficiente.",
+    "estado": "pendiente",
+    "concepto_final": "",
+    "contenido_final": "",
+    "fecha_revision": ""
+  },
+  {
+    "id": "A0004",
+    "fecha_hora": "2026-10-27T11:54:35",
+    "dominio": "base_datos",
+    "capacidad": "consulta libre",
+    "consulta": "Qué es una url",
+    "concepto_sugerido": "una url",
+    "respuesta_ia": "Saludos. Como **Agente Arquitecto Digital**, estoy aquí para orientarte a ti y a tus estudiantes en el fascinante mundo de los sistemas de información. \n\nAbordemos la consulta solicitada con un enfoque claro, académico y práctico, ideal para que los estudiantes de Ingeniería de Sistemas lo comprendan y puedan integrarlo en su base de conocimiento.\n\n---\n\n### ¿Qué es una URL?\n\nImagina que estás construyendo una gran ciudad digital (la red de internet). En esta ciudad hay millones de edificios (servidores) que guardan información valiosa: páginas web, imágenes, bases de datos y archivos. \n\nPara encontrar un edificio específico en esa ciudad, necesitas una dirección exacta. Esa dirección es lo que llamamos **URL**.\n\n**URL** es la sigla en inglés de *Uniform Resource Locator*, que en español se traduce como **Localizador Uniforme de Recursos**. En términos sencillos, **es la dirección web única que utilizas para encontrar un recurso específico (como una página web, una imagen o un documento) en internet.**\n\n---\n\n### Anatomía de una URL (Paso a Paso)\n\nPara entender cómo funciona una URL dentro de la arquitectura de sistemas, debemos ver que no es solo un texto aleatorio, sino que está dividida en partes bien organizadas. \n\nTomemos como ejemplo la siguiente URL ficticia y educativa:\n\n> `https://www.miuniversidad.edu.co/ingenieria/estudiantes?id=123`\n\nDesglosemos sus componentes principales:\n\n1. **El Protocolo (`https://`):** \n   * **¿Qué es?** Es el \"idioma\" o conjunto de reglas que usan el navegador (como Chrome o Firefox) y el servidor para comunicarse de forma segura. \n   * *Término técnico:* **HTTPS** significa *HyperText Transfer Protocol Secure* (Protocolo de Transferencia de Hipertexto Seguro). La parte \"Segura\" indica que los datos viajan cifrados (protegidos contra mirones en la red).\n\n2. **El Dominio (`www.miuniversidad.edu.co`):**\n   * **¿Qué es?** Es el nombre legible del servidor o la \"dirección postal\" del edificio en internet. Traduce una dirección IP numérica (que es difícil de recordar para los humanos, por ejemplo: `192.168.1.1`) a un nombre fácil de leer.\n   * *Partes del dominio:* \n     * `www`: Indica que es un servicio web.\n     * `miuniversidad`: El nombre propio de la organización.\n     * `.edu.co`: La extensión que indica que es una institución educativa (`.edu`) ubicada en un país específico (`.co` de Colombia).\n\n3. **La Ruta o Directorio (`/ingenieria/estudiantes`):**\n   * **¿Qué es?** Es el camino exacto dentro del servidor para encontrar el archivo o la sección que buscas. Funciona exactamente igual que las carpetas en el disco duro de tu computador (`C:/Documentos/Universidad/Ingenieria/...`).\n\n4. **Los Parámetros de Consulta o *Query String* (`?id=123`):**\n   * **¿Qué es?** Es información adicional que se le envía al servidor para que personalice la respuesta. Comienza siempre con un signo de interrogación (`?`).\n   * En este ejemplo, le estamos diciendo al servidor: *\"Muéstrame la sección de estudiantes, pero específicamente tráeme los datos del estudiante cuyo identificador (`id`) es el 123\"*. (Aquí es donde se conecta directamente con el mundo de las **Bases de Datos**, ya que ese número `123` usualmente se usa para hacer una consulta a una tabla en el servidor).\n\n---\n\n### ¿Cómo se relaciona la URL con la Arquitectura de Sistemas?\n\nEn el diseño de sistemas de información, la URL es el puente de comunicación fundamental entre el **Cliente** (la aplicación web o móvil que ve el usuario) y el **Servidor** (donde vive la lógica y la **Base de Datos**).\n\n* **Paso de mensajes:** Cuando un usuario escribe una URL o hace clic en un botón, la aplicación envía una solicitud (*Request*) usando esa URL.\n* **Procesamiento:** El servidor recibe la URL, la interpreta, sabe exactamente qué datos buscar (a menudo consultando la base de datos) y devuelve una respuesta (*Response*), como por ejemplo, la interfaz gráfica que el usuario visualiza.\n\n---\n\n*Nota para el estudiante que revisará esta respuesta:* \nEsta explicación está diseñada para ser clara y conceptual. Si necesitas profundizar en cómo las aplicaciones web interpretan estas URLs (lo que llamamos *enrutamiento* o *routing*), o cómo los parámetros viajan de forma segura hacia la base de datos, indícamelo para seguir construyendo tu conocimiento paso a paso.",
+    "motivo": "La base local no contenía una respuesta suficiente.",
+    "estado": "pendiente",
+    "concepto_final": "",
+    "contenido_final": "",
+    "fecha_revision": ""
   }
 ]

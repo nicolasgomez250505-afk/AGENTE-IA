@@ -119,3 +119,5 @@ def buscar_concepto(dominio: str, consulta: str) -> tuple[str | None, str | None
         return concepto, explicacion
 
     return None, None
+
+

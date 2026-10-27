@@ -1,7 +1,8 @@
 {
-  "total": 2,
+  "total": 4,
   "por_dominio": {
-    "base_datos": 2
+    "base_datos": 3,
+    "web": 1
   },
   "historial": [
     {
@@ -19,8 +20,90 @@
       "consulta": "de que sirve la ciberserguridad",
       "origen": "Gemini",
       "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:00:02",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es url",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:00:19",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "como se define el frontend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:00:33",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que vendria siendo el backend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:00:45",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "quiero pitillo frontend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:01:05",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "quiero pitillo frontend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:01:59",
+      "dominio": "web",
+      "capacidad": "generar arquitectura",
+      "consulta": "pagina web de libros",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:32:07",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "como puedo hacer una pagina que contenga una url de francia?\n",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:32:26",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "quien es mi padre?",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:32:55",
+      "dominio": "web",
+      "capacidad": "integrar arquitectura",
+      "consulta": "pagina web de libreria",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:54:35",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una url",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
     }
   ],
-  "respuestas_locales": 0,
-  "respuestas_locales_por_dominio": {}
+  "respuestas_locales": 8,
+  "respuestas_locales_por_dominio": {
+    "web": 8
+  }
 }
