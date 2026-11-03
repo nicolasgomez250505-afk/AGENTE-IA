@@ -656,5 +656,19 @@
     "concepto_final": "",
     "contenido_final": "",
     "fecha_revision": ""
+  },
+  {
+    "id": "A0048",
+    "fecha_hora": "2026-11-03T15:12:29",
+    "dominio": "base_datos",
+    "capacidad": "consulta libre",
+    "consulta": "Qué significa front-end",
+    "concepto_sugerido": "Qué significa front-end",
+    "respuesta_ia": "Hola. Como Agente Arquitecto Digital, estoy aquí para guiarte en este proceso de aprendizaje sobre el diseño de sistemas de información. \n\nAbordemos la consulta solicitada enfocándola desde la perspectiva de la arquitectura de sistemas y su relación con las bases de datos.\n\n---\n\n### ¿Qué significa *front-end*?\n\nEl **front-end** (también conocido como el lado del cliente) es la parte de una aplicación web o móvil con la que los usuarios interactúan directamente. En términos sencillos, es todo lo que ves y experimentas en tu pantalla cuando usas una página web o una aplicación en tu teléfono: los colores, los botones, los formularios de registro, las imágenes y los menús de navegación.\n\n#### Ejemplo real\nPiensa en una aplicación de pedidos de comida a domicilio. El *front-end* es la pantalla donde eliges tu hamburguesa favorita, ves las fotos, haces clic en el botón \"Comprar\" y escribes tu dirección. \n\n#### Su papel en la arquitectura de sistemas\nEn la arquitectura de un sistema de información, el *front-end* cumple una función muy específica: **la interfaz y la experiencia de usuario (UI/UX)**. \n\nSin embargo, el *front-end* por sí solo no puede guardar información de forma permanente. Por ejemplo, cuando te registras en una aplicación, el *front-end* solo se encarga de mostrarte las casillas para escribir tu nombre y contraseña, y de verificar que hayas escrito un correo electrónico válido antes de enviarlo. \n\n#### ¿Cómo se conecta con los otros componentes?\nEl *front-end* no se comunica directamente con la **base de datos** por razones de seguridad y orden. Su conexión en la arquitectura general funciona de la siguiente manera:\n\n1. **El usuario** interactúa con el **front-end** (por ejemplo, presiona el botón \"Iniciar sesión\").\n2. El **front-end** envía esa información a través de la red hacia el **back-end** (la capa lógica o servidor del sistema).\n3. El **back-end** procesa la solicitud y se comunica con la **base de datos** para consultar si el usuario existe y si la contraseña es correcta.\n4. La base de datos responde al back-end, este le devuelve el resultado al front-end, y finalmente tu pantalla muestra un mensaje de \"Bienvenido\" o \"Contraseña incorrecta\".\n\n---\n\n*Nota para el estudiante que realizará la revisión:* Esta definición se centra en la función visual y estructural del front-end dentro del flujo general de datos de un sistema. ¿Te gustaría profundizar en cómo el front-end envía datos hacia el servidor o tienes alguna otra duda sobre este componente?",
+    "motivo": "La base local no contenía una respuesta suficiente.",
+    "estado": "pendiente",
+    "concepto_final": "",
+    "contenido_final": "",
+    "fecha_revision": ""
   }
 ]
