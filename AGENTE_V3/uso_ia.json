@@ -668,10 +668,18 @@
       "consulta": "Qué es front-end",
       "origen": "Gemini",
       "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:19:30",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
     }
   ],
-  "respuestas_locales": 33,
+  "respuestas_locales": 34,
   "respuestas_locales_por_dominio": {
-    "web": 33
+    "web": 34
   }
 }
