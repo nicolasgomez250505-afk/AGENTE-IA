@@ -670,5 +670,19 @@
     "concepto_final": "",
     "contenido_final": "",
     "fecha_revision": ""
+  },
+  {
+    "id": "A0049",
+    "fecha_hora": "2026-11-03T15:13:34",
+    "dominio": "base_datos",
+    "capacidad": "consulta libre",
+    "consulta": "Qué es una Api",
+    "concepto_sugerido": "una Api",
+    "respuesta_ia": "¡Hola! Qué gusto saludarte. Como Agente Arquitecto Digital, estoy aquí para apoyarte a ti y a los estudiantes de Ingeniería de Sistemas en la construcción y comprensión de soluciones tecnológicas sólidas.\n\nVamos a abordar la consulta solicitada enfocándonos en el ámbito de las **Bases de Datos** y su relación con la arquitectura de sistemas.\n\n---\n\n### ¿Qué es una API?\n\nImagina que estás en un restaurante. \n* **Tú** eres una **aplicación web o móvil** (la interfaz que ve el usuario).\n* **La cocina** es el **servidor y la base de datos** (donde se procesa la información y se guardan los datos, como el menú, las órdenes y las cuentas).\n* **El mesero** es la **API** (*Application Programming Interface*, o Interfaz de Programación de Aplicaciones).\n\nTú (la aplicación) no puedes entrar directamente a la cocina a cocinar ni a revisar los ingredientes. Le pides al mesero (la API) lo que necesitas; el mesero lleva tu pedido a la cocina, la cocina prepara el plato (consulta los datos en la base de datos), y el mesero te lo regresa a la mesa. \n\nEn términos técnicos, **una API es un conjunto de reglas y protocolos que permite que dos sistemas de software diferentes se comuniquen entre sí**.\n\n---\n\n### ¿Cómo se relaciona una API con las Bases de Datos y la Arquitectura de Sistemas?\n\nEn el diseño de sistemas de información, rara vez un solo programa hace todo. Los componentes se dividen para mantener el orden, la seguridad y la escalabilidad:\n\n1. **La Base de Datos (Nuestro Almacén):** Es el componente encargado de guardar la información de forma estructurada (por ejemplo, usuarios, productos, transacciones). No habla directamente con los usuarios de internet por razones de seguridad.\n2. **El Servidor (La Lógica):** Procesa las reglas del negocio.\n3. **La API (El Puente):** Es la puerta de entrada controlada. Cuando una aplicación web o móvil necesita consultar o guardar un dato, le hace una petición (llamada *request*) a la API. La API toma esa petición, habla con la base de datos, obtiene la información y se la devuelve a la aplicación en un formato estándar (generalmente JSON, que es como un texto ordenado que cualquier sistema puede leer).\n\n---\n\n### Términos Técnicos Clave para Estudiantes:\n\n* **API (Interfaz de Programación de Aplicaciones):** El \"mensajero\" o conjunto de reglas que permite que una aplicación le pida datos o servicios a otra.\n* **JSON (*JavaScript Object Notation*):** Un formato ligero de intercambio de datos. Es muy fácil de leer tanto para humanos como para máquinas. Es el \"idioma\" que usa la API para empaquetar la información cuando viaja de un lugar a otro.\n* **Petición / Solicitud (*Request*):** El mensaje que envía una aplicación (como una app móvil) pidiendo información o acción a la API.\n* **Respuesta (*Response*):** El paquete de datos que la API devuelve a la aplicación tras procesar la solicitud.\n\n---\n\n### Nota para la revisión del estudiante:\n*Esta explicación está diseñada para ser introductoria y conectar el concepto de API con el flujo de la información hacia una base de datos, sin entrar aún en protocolos complejos (como REST, métodos HTTP o tokens de seguridad), los cuales podemos profundizar en la siguiente consulta si el grupo lo requiere.* \n\n¿Hay algún otro concepto o componente (como seguridad o integración) que desees que desarrollemos para este caso?",
+    "motivo": "La base local no contenía una respuesta suficiente.",
+    "estado": "pendiente",
+    "concepto_final": "",
+    "contenido_final": "",
+    "fecha_revision": ""
   }
 ]
