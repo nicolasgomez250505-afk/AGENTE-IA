@@ -1,8 +1,8 @@
 {
-  "total": 4,
+  "total": 44,
   "por_dominio": {
-    "base_datos": 3,
-    "web": 1
+    "base_datos": 22,
+    "web": 22
   },
   "historial": [
     {
@@ -100,10 +100,490 @@
       "consulta": "Qué es una url",
       "origen": "Gemini",
       "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T11:59:47",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-27T12:01:34",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T08:26:41",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T08:43:52",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es front-end",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:31:08",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:31:47",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:31:51",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:31:52",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:31:53",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:31:55",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:31:59",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:02",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:06",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es frontend",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:07",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es frontend",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:09",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es frontend",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:09",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es frontend",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:09",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es frontend",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:14",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es frontend",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:15",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es frontend",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:32:17",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:33:32",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:34:11",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es interconexión",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:03",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:05",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:08",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:08",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:09",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es frontend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:10",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:12",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:16",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:20",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:33",
+      "dominio": "web",
+      "capacidad": "generar arquitectura",
+      "consulta": "biblioteca de libros",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:35:55",
+      "dominio": "web",
+      "capacidad": "validar arquitectura",
+      "consulta": "api, frontend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:36:08",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:36:33",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:36:35",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:36:35",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:36:35",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:36:37",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:36:39",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:36:59",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es interconexion",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-28T10:37:09",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es jijija",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T09:34:55",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "como puedo crear una pagina web de gatitos?",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T09:35:57",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Cómo puedo crear una página web de gatitos",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T10:36:16",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "como funciona una ruta de api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T10:36:24",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "como funciona una api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T10:36:30",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "como funciona una ruta",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T10:36:40",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es ci",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T10:37:01",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es ruta de api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:13:16",
+      "dominio": "web",
+      "capacidad": "generar arquitectura",
+      "consulta": "necesito crear un almacen de datos",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:13:59",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es un almacen de datos",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:14:28",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es acme",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:14:54",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es acné",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:15:08",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es acme",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:36:05",
+      "dominio": "web",
+      "capacidad": "validar arquitectura",
+      "consulta": "frontend, backend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:36:05",
+      "dominio": "web",
+      "capacidad": "corregir arquitectura",
+      "consulta": "frontend, backend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:36:26",
+      "dominio": "web",
+      "capacidad": "integrar arquitectura",
+      "consulta": "biblioteca universitaria",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T11:41:41",
+      "dominio": "web",
+      "capacidad": "generar arquitectura",
+      "consulta": "venta de collares",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-10-30T12:16:40",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "años tienes tú",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-02T12:47:55",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "como puedo hacer una pagina web sobre farmacos?\n",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
     }
   ],
-  "respuestas_locales": 8,
+  "respuestas_locales": 28,
   "respuestas_locales_por_dominio": {
-    "web": 8
+    "web": 28
   }
 }

@@ -23,6 +23,11 @@ from conocimiento_dominios import (
 
 from modelo_ia import preguntar_ia
 
+from almacenamiento_github import (
+    leer_json as leer_json_github,
+    guardar_json as guardar_json_github
+)
+
 
 BASE_DIR = Path(__file__).resolve().parent
 RUTA_USO_IA = BASE_DIR / "uso_ia.json"
@@ -34,25 +39,21 @@ def _ahora() -> str:
 
 
 def _leer_json(ruta: Path, default):
-    if not ruta.exists():
-        return default
-
     try:
-        return json.loads(
-            ruta.read_text(encoding="utf-8")
+        return leer_json_github(
+            ruta.name,
+            default
         )
-    except Exception:
-        return default
+    except Exception as error:
+        raise RuntimeError(
+            f"No se pudo leer {ruta.name}: {error}"
+        ) from error
 
 
 def _guardar_json(ruta: Path, datos) -> None:
-    ruta.write_text(
-        json.dumps(
-            datos,
-            ensure_ascii=False,
-            indent=2
-        ),
-        encoding="utf-8"
+    guardar_json_github(
+        ruta.name,
+        datos
     )
 
 

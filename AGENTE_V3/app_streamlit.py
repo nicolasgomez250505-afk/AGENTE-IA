@@ -44,7 +44,7 @@ from motor_dominios import (
 
 
 BASE_DIR = Path(__file__).resolve().parent
-RUTA_LOGO = BASE_DIR / "kick.png"
+RUTA_LOGO = BASE_DIR / "cr7.jpg"
 
 
 st.set_page_config(
@@ -114,6 +114,158 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+st.markdown(
+    """
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap');
+
+        :root {
+            --kick-noche: #07163a;
+            --kick-azul: #0a46c8;
+            --kick-cyan: #3df0ff;
+            --kick-rojo: #e8262b;
+            --kick-amarillo: #ffd21f;
+            --kick-blanco: #f4f8ff;
+        }
+
+        .stApp {
+            background:
+                linear-gradient(rgba(61, 240, 255, 0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(61, 240, 255, 0.06) 1px, transparent 1px),
+                linear-gradient(160deg, #07163a 0%, #0a2a7a 55%, #0a46c8 100%);
+            background-size: 44px 44px, 44px 44px, 100% 100%;
+            background-attachment: fixed;
+        }
+
+        [data-testid="stHeader"] {
+            background: transparent;
+        }
+
+        [data-testid="stSidebar"] {
+            background: linear-gradient(180deg, #050f2a 0%, #081d4d 100%);
+            border-right: 4px solid var(--kick-rojo);
+            box-shadow: 4px 0 18px rgba(232, 38, 43, 0.35);
+        }
+
+        [data-testid="stSidebar"] img {
+            border-radius: 16px;
+            transition: box-shadow 0.25s ease;
+        }
+
+        [data-testid="stSidebar"] img:hover {
+            box-shadow: 0 0 22px rgba(255, 210, 31, 0.8);
+        }
+
+        .big-title,
+        h1, h2, h3, h4 {
+            font-family: 'Chakra Petch', sans-serif !important;
+            color: var(--kick-blanco);
+            text-shadow: 0 0 6px rgba(61, 240, 255, 0.35);
+            transition: text-shadow 0.25s ease;
+        }
+
+        .big-title:hover,
+        h1:hover, h2:hover, h3:hover, h4:hover {
+            text-shadow:
+                0 0 8px #3df0ff,
+                0 0 20px #3df0ff,
+                0 0 42px rgba(61, 240, 255, 0.7);
+        }
+
+        .big-title::after {
+            content: "";
+            display: block;
+            height: 6px;
+            width: 120px;
+            margin-top: 0.5rem;
+            border-radius: 3px;
+            background: linear-gradient(
+                90deg,
+                var(--kick-rojo) 0 45%,
+                #ffffff 45% 55%,
+                var(--kick-rojo) 55% 100%
+            );
+            transition: width 0.3s ease;
+        }
+
+        .big-title:hover::after {
+            width: 220px;
+        }
+
+        .subtitle {
+            color: #b9ccff;
+        }
+
+        .stMarkdown p,
+        .stMarkdown li,
+        [data-testid="stCaptionContainer"],
+        [data-testid="stWidgetLabel"] p,
+        button[data-baseweb="tab"] p {
+            transition: text-shadow 0.25s ease;
+        }
+
+        .stMarkdown p:hover,
+        .stMarkdown li:hover,
+        [data-testid="stCaptionContainer"]:hover,
+        [data-testid="stWidgetLabel"] p:hover,
+        button[data-baseweb="tab"]:hover p {
+            text-shadow: 0 0 10px rgba(61, 240, 255, 0.9);
+        }
+
+        [data-testid="stSidebar"] [data-testid="stRadio"] label {
+            border-radius: 8px;
+            padding: 0.15rem 0.45rem;
+            transition: background 0.2s ease, text-shadow 0.2s ease;
+        }
+
+        [data-testid="stSidebar"] [data-testid="stRadio"] label:hover {
+            background: rgba(61, 240, 255, 0.12);
+            text-shadow: 0 0 10px var(--kick-amarillo);
+        }
+
+        .stButton > button,
+        .stDownloadButton > button {
+            border-radius: 10px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-weight: 600;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .stButton > button:hover,
+        .stDownloadButton > button:hover {
+            box-shadow:
+                0 0 0 2px var(--kick-amarillo),
+                0 0 18px rgba(255, 210, 31, 0.75);
+            transform: translateY(-1px);
+        }
+
+        [data-baseweb="input"]:focus-within,
+        [data-baseweb="textarea"]:focus-within {
+            box-shadow:
+                0 0 0 1px var(--kick-cyan),
+                0 0 14px rgba(61, 240, 255, 0.55);
+        }
+
+        [data-testid="stMetric"],
+        [data-testid="stExpander"] {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(61, 240, 255, 0.25);
+            border-radius: 12px;
+        }
+
+        [data-testid="stMetric"] {
+            padding: 0.8rem 1rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+            }
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 def _texto(valor: Any) -> str:
     """Convierte cualquier valor a texto seguro."""
@@ -277,7 +429,7 @@ if pagina == "🏠 Inicio":
 
     st.markdown(
         '<div class="big-title">'
-        "Agente Arquitecto Digital"
+        "Agente Diseño Web y Arquitectura Digital"
         "</div>",
         unsafe_allow_html=True,
     )

@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import unicodedata
 from pathlib import Path
+from almacenamiento_github import leer_json, guardar_json
 
 BASE_DIR = Path(__file__).resolve().parent
 DATOS_DIR = BASE_DIR / "datos_dominios"
@@ -30,20 +31,28 @@ def normalizar_texto(texto: str) -> str:
 
 
 def cargar_conocimiento(dominio: str) -> dict:
-    with _ruta(dominio).open("r", encoding="utf-8") as archivo:
-        datos = json.load(archivo)
+    ruta_relativa = f"datos_dominios/{dominio}.json"
+
+    datos = leer_json(ruta_relativa)
+
+    if datos is None:
+        raise FileNotFoundError(
+            f"No se encontró el archivo de conocimiento: {dominio}.json"
+        )
+
     datos.setdefault("ensenar", {})
     datos.setdefault("arquitectura", [])
     datos.setdefault("requisitos", [])
     datos.setdefault("correcciones", {})
     datos.setdefault("integracion", [])
+
     return datos
 
 
 def guardar_conocimiento(dominio: str, datos: dict) -> None:
-    ruta = _ruta(dominio)
-    with ruta.open("w", encoding="utf-8") as archivo:
-        json.dump(datos, archivo, ensure_ascii=False, indent=2)
+    ruta_relativa = f"datos_dominios/{dominio}.json"
+
+    guardar_json(ruta_relativa, datos)
 
 
 def agregar_concepto(dominio: str, concepto: str, explicacion: str) -> None:
