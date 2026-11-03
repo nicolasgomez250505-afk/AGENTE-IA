@@ -628,10 +628,18 @@
       "consulta": "Qué es una Api",
       "origen": "Gemini",
       "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T14:17:34",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
     }
   ],
-  "respuestas_locales": 32,
+  "respuestas_locales": 33,
   "respuestas_locales_por_dominio": {
-    "web": 32
+    "web": 33
   }
 }
