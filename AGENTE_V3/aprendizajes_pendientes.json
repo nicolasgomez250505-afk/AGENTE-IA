@@ -684,5 +684,19 @@
     "concepto_final": "",
     "contenido_final": "",
     "fecha_revision": ""
+  },
+  {
+    "id": "A0050",
+    "fecha_hora": "2026-11-03T15:17:22",
+    "dominio": "web",
+    "capacidad": "consulta libre",
+    "consulta": "Qué es front-end",
+    "concepto_sugerido": "front-end",
+    "respuesta_ia": "¡Hola! Como tu Agente Arquitecto Digital, con gusto te ayudaré a explicar este concepto fundamental para que el estudiante pueda revisarlo e incorporarlo.\n\nEn el diseño de sistemas de información, el **Frontend** (o interfaz de usuario) es la parte de una aplicación web con la que interactúa directamente el usuario en su navegador. \n\n### ¿Qué incluye y cómo funciona?\n* **Elementos visuales:** Incluye los botones, formularios, menús, imágenes y pantallas que ves en la pantalla. Por ejemplo, en una tienda virtual, el frontend permite ver los productos, agregarlos al carrito y consultar el precio.\n* **Tecnologías base:** Normalmente se desarrolla utilizando **HTML** (para estructurar el contenido), **CSS** (para darle estilo y diseño adaptable) y **JavaScript** (para agregar comportamiento e interactuar con el usuario).\n\n### Relación con la Arquitectura de Sistemas\nDesde la perspectiva de la arquitectura de aplicaciones web, el frontend representa el punto de entrada para los usuarios (la capa de presentación). Sin embargo, por sí solo no procesa reglas de negocio complejas ni accede directamente a bases de datos seguras. Para funcionar de manera completa, el frontend se comunica con el **Backend** (la lógica del servidor) mediante solicitudes a través de una **API REST**, intercambiando información (generalmente en formato **JSON**) para mostrar los datos dinámicamente en la pantalla sin necesidad de recargar todo el sitio.",
+    "motivo": "La base local no contenía una respuesta suficiente.",
+    "estado": "pendiente",
+    "concepto_final": "",
+    "contenido_final": "",
+    "fecha_revision": ""
   }
 ]
