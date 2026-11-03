@@ -1,7 +1,7 @@
 {
-  "total": 46,
+  "total": 47,
   "por_dominio": {
-    "base_datos": 24,
+    "base_datos": 25,
     "web": 22
   },
   "historial": [
@@ -636,6 +636,14 @@
       "consulta": "Qué es una Api",
       "origen": "base local",
       "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:11:42",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Dime el significado de Frozen",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
     }
   ],
   "respuestas_locales": 33,
