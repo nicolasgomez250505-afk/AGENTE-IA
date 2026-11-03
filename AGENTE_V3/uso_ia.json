@@ -588,10 +588,18 @@
       "consulta": "que es una api",
       "origen": "Gemini",
       "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-11-03T06:58:40",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
     }
   ],
-  "respuestas_locales": 28,
+  "respuestas_locales": 29,
   "respuestas_locales_por_dominio": {
-    "web": 28
+    "web": 29
   }
 }
