@@ -1,7 +1,7 @@
 {
-  "total": 44,
+  "total": 45,
   "por_dominio": {
-    "base_datos": 22,
+    "base_datos": 23,
     "web": 22
   },
   "historial": [
@@ -580,6 +580,14 @@
       "consulta": "como puedo hacer una pagina web sobre farmacos?\n",
       "origen": "Gemini",
       "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T06:58:27",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
     }
   ],
   "respuestas_locales": 28,
