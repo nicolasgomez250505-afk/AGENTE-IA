@@ -1,7 +1,7 @@
 {
-  "total": 45,
+  "total": 46,
   "por_dominio": {
-    "base_datos": 23,
+    "base_datos": 24,
     "web": 22
   },
   "historial": [
@@ -620,6 +620,14 @@
       "consulta": "Qué es una Api",
       "origen": "base local",
       "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T14:17:28",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
     }
   ],
   "respuestas_locales": 32,
