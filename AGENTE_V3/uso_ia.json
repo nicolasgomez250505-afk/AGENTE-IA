@@ -1,7 +1,7 @@
 {
-  "total": 47,
+  "total": 48,
   "por_dominio": {
-    "base_datos": 25,
+    "base_datos": 26,
     "web": 22
   },
   "historial": [
@@ -642,6 +642,14 @@
       "dominio": "base_datos",
       "capacidad": "consulta libre",
       "consulta": "Dime el significado de Frozen",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:12:27",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué significa front-end",
       "origen": "Gemini",
       "motivo": "La base local no contenía una respuesta suficiente."
     }
