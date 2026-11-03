@@ -1,7 +1,7 @@
 {
-  "total": 48,
+  "total": 49,
   "por_dominio": {
-    "base_datos": 26,
+    "base_datos": 27,
     "web": 22
   },
   "historial": [
@@ -650,6 +650,14 @@
       "dominio": "base_datos",
       "capacidad": "consulta libre",
       "consulta": "Qué significa front-end",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:13:32",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
       "origen": "Gemini",
       "motivo": "La base local no contenía una respuesta suficiente."
     }
