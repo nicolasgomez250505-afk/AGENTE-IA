@@ -642,5 +642,19 @@
     "concepto_final": "",
     "contenido_final": "",
     "fecha_revision": ""
+  },
+  {
+    "id": "A0047",
+    "fecha_hora": "2026-11-03T15:11:44",
+    "dominio": "base_datos",
+    "capacidad": "consulta libre",
+    "consulta": "Dime el significado de Frozen",
+    "concepto_sugerido": "Dime el significado de Frozen",
+    "respuesta_ia": "Saludos, futuro colega de la ingeniería de sistemas. Como **Agente Arquitecto Digital**, estoy aquí para ayudarte a ti y a tus estudiantes a comprender los conceptos fundamentales del diseño de sistemas.\n\nEn el contexto de la **ingeniería de software y las bases de datos**, el término **\"Frozen\" (Congelado)** se refiere principalmente a un estado de inmutabilidad o bloqueo temporal. A continuación, te explico su significado y cómo se aplica dentro de la arquitectura de sistemas y las bases de datos:\n\n---\n\n### ¿Qué significa \"Frozen\" en Bases de Datos y Sistemas?\n\n1. **Inmutabilidad de datos (Datos de solo lectura):**\n   * **Significado:** Significa que un conjunto de datos, una tabla o una partición ha sido configurada para **no permitir modificaciones** (ni inserciones, ni actualizaciones, ni eliminaciones). \n   * **Ejemplo real:** Imagina los registros contables del año fiscal 2022. Una vez cerrado el año, esos datos \"se congelan\" para evitar que nadie los altere por error o de forma maliciosa, garantizando auditorías confiables.\n\n2. **Congelamiento de esquemas (Schema Freezing):**\n   * **Significado:** En el desarrollo ágil o en bases de datos relacionales, se refiere a un punto en el tiempo donde **no se permite cambiar la estructura** de la base de datos (por ejemplo, agregar nuevas columnas o borrar tablas) porque ya hay aplicaciones dependiendo de esa estructura en producción.\n\n3. **Bloqueos (Locks) y Concurrencia:**\n   * Aunque técnicamente se suele llamar *locking* o *deadlock*, a nivel conceptual operativo a veces se habla de \"congelar\" transacciones cuando dos procesos intentan modificar el mismo dato al mismo tiempo, pausando uno para proteger la integridad de la información.\n\n---\n\n### Relación con la Arquitectura de Sistemas y la Seguridad\n\n* **Integridad y Ciberseguridad (Defensiva):** \"Congelar\" datos críticos o versiones de bases de datos es una excelente **práctica defensiva**. Ayuda a mitigar riesgos de ataques de *Ransomware* (secuestro de datos) o modificaciones no autorizadas (manipulación de registros por parte de usuarios con privilegios elevados).\n* **Integración:** Cuando diferentes aplicaciones consumen información de una misma base de datos, congelar una versión de los datos (como una API o una tabla histórica) asegura que los sistemas externos no sufran fallas imprevistas debido a cambios repentinos en la estructura.\n\n---\n\n### Recomendación para el estudiante que revisará el concepto:\nPuedes sugerirle al estudiante que defina el término en su base local relacionándolo con **la protección de la información histórica y la prevención de cambios accidentales**, ya que en arquitectura siempre buscamos equilibrar la flexibilidad (poder cambiar datos) con la seguridad (proteger datos que ya son definitivos).\n\n¿Te gustaría profundizar en cómo implementar políticas de solo lectura en algún motor de base de datos en específico, o pasamos a otro concepto?",
+    "motivo": "La base local no contenía una respuesta suficiente.",
+    "estado": "pendiente",
+    "concepto_final": "",
+    "contenido_final": "",
+    "fecha_revision": ""
   }
 ]
