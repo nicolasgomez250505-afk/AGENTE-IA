@@ -628,5 +628,19 @@
     "concepto_final": "",
     "contenido_final": "",
     "fecha_revision": ""
+  },
+  {
+    "id": "A0046",
+    "fecha_hora": "2026-11-03T14:17:30",
+    "dominio": "base_datos",
+    "capacidad": "consulta libre",
+    "consulta": "Qué es una Api",
+    "concepto_sugerido": "una Api",
+    "respuesta_ia": "¡Hola! Qué gusto saludarte. Como Agente Arquitecto Digital, estoy aquí para apoyarte a ti y a tus estudiantes de Ingeniería de Sistemas en el fascinante camino del diseño de sistemas.\n\nVamos a abordar la consulta solicitada enfocándonos en cómo una API se relaciona con las **bases de datos** y la arquitectura general de los sistemas de información.\n\n---\n\n### ¿Qué es una API?\n\nImagina que estás en un restaurante. \n* **Tú (o tu aplicación)** están sentados en una mesa y quieren pedir un plato de comida (datos).\n* **La cocina** es el lugar donde se prepara todo; en nuestro mundo de sistemas, **la cocina es la Base de Datos**, el lugar seguro donde se almacena, organiza y procesa toda la información (usuarios, productos, ventas, etc.).\n* Como tú no puedes entrar directamente a la cocina a buscar tu comida por razones de orden y seguridad, necesitas un **mesero**.\n\nEse **mesero** es una **API** (por sus siglas en inglés, *Application Programming Interface*, que traducido significa Interfaz de Programación de Aplicaciones). \n\nUna API es un **mensajero o puente** que toma la solicitud de una aplicación (por ejemplo, una aplicación web o móvil), va a la base de datos (o al servidor que la administra), trae la información de vuelta y se la entrega a la aplicación de forma ordenada.\n\n---\n\n### ¿Cómo se conecta una API con la Base de Datos en la Arquitectura de Sistemas?\n\nEn el diseño de un sistema moderno, rara vez una aplicación web o móvil se conecta directamente a la base de datos por razones de seguridad y rendimiento. La arquitectura típica se organiza en capas:\n\n1. **Capa de Presentación (Aplicaciones Web o Móviles):** Es lo que ve el usuario final en su pantalla (la interfaz gráfica).\n2. **Capa de Lógica / Servidor (donde vive la API):** Es el intermediario. Recibe las peticiones del usuario (ej. *\"quiero iniciar sesión\"* o *\"quiero ver mi lista de compras\"*).\n3. **Capa de Datos (Base de Datos):** Es donde se guardan permanentemente los registros.\n\n**El flujo paso a paso:**\n* **Paso 1:** Un estudiante usa una aplicación móvil para registrar su nota en un sistema.\n* **Paso 2:** La aplicación móvil le envía esos datos a la **API** a través de internet.\n* **Paso 3:** La API recibe la información, **valida** que los datos sean correctos (por ejemplo, que la nota sea un número válido) para proteger la integridad de la base de datos.\n* **Paso 4:** La API traduce esa solicitud a un lenguaje que la base de datos entiende (como SQL) y guarda la información.\n* **Paso 5:** La base de datos responde a la API diciendo *\"¡Operación exitosa!\"*, y la API le avisa a la aplicación móvil para que le muestre un mensaje en pantalla al estudiante.\n\n---\n\n### Términos clave para repasar con los estudiantes:\n\n* **Interfaz:** Un punto de contacto o puente que permite que dos sistemas diferentes se comuniquen entre sí.\n* **Petición (*Request*):** La orden o pregunta que envía la aplicación (ej. *\"Dame los datos del usuario 5\"*).\n* **Respuesta (*Response*):** El resultado que devuelve la API (ej. *\"Aquí están los datos del usuario 5\"*).\n\n---\n\n*Nota para el profesor:* Esta explicación está diseñada para ser comprensible para estudiantes que están comenzando a entender cómo fluyen los datos en una arquitectura de software. Quedo a tu disposición si necesitas profundizar en algún aspecto de bases de datos, seguridad o integración con este concepto.",
+    "motivo": "La base local no contenía una respuesta suficiente.",
+    "estado": "pendiente",
+    "concepto_final": "",
+    "contenido_final": "",
+    "fecha_revision": ""
   }
 ]
