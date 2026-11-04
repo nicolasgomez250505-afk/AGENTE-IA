@@ -692,10 +692,18 @@
       "consulta": "cuales son sus principales caracteristicas?",
       "origen": "base local",
       "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-04T08:55:10",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es una api?",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
     }
   ],
-  "respuestas_locales": 35,
+  "respuestas_locales": 36,
   "respuestas_locales_por_dominio": {
-    "web": 35
+    "web": 36
   }
 }
