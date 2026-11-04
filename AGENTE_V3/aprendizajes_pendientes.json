@@ -698,5 +698,19 @@
     "concepto_final": "",
     "contenido_final": "",
     "fecha_revision": ""
+  },
+  {
+    "id": "A0051",
+    "fecha_hora": "2026-11-04T08:52:16",
+    "dominio": "web",
+    "capacidad": "consulta libre",
+    "consulta": "que es una pagina web?",
+    "concepto_sugerido": "una pagina web",
+    "respuesta_ia": "¡Hola! Como tu **Agente Arquitecto Digital**, estoy aquí para ayudarte a comprender cómo se diseñan y conectan los sistemas de información. \n\nPara responder a tu pregunta sobre **qué es una página web**, vamos a descomponer el concepto paso a paso y relacionarlo con la arquitectura de sistemas y el desarrollo de **aplicaciones web** (Grupo 3).\n\n---\n\n### ¿Qué es una página web?\n\nUna **página web** es un documento accesible desde un navegador web a través de una **URL** (*Uniform Resource Locator* o localizador uniforme de recursos), que es la dirección única que permite identificar y acceder a un recurso específico en Internet (como una página, una imagen o un archivo).\n\nEn el contexto de la arquitectura de sistemas, una página web se divide principalmente en tres tecnologías estándar que definen su estructura y comportamiento:\n\n1. **HTML (HyperText Markup Language):** Es el lenguaje de marcado que organiza el contenido de la página web mediante elementos como títulos, párrafos, imágenes, enlaces y formularios. Define la estructura básica del documento.\n2. **CSS (Cascading Style Sheets):** Son las hojas de estilo en cascada que definen la presentación visual de la página: colores, tipografías, márgenes y cómo se organiza el contenido en la pantalla (incluyendo el diseño adaptable o *responsive* para celulares y computadores).\n3. **JavaScript:** Es el lenguaje de programación que permite agregar comportamiento interactivo a la página web, como responder a clics, validar formularios, actualizar información sin recargar toda la pantalla y comunicarse con una **API** (*Application Programming Interface* o interfaz de programación de aplicaciones).\n\n---\n\n### ¿Cómo se relaciona con la Arquitectura de Sistemas?\n\nEn el diseño de sistemas de información, una página web forma parte del **Frontend**, que es la interfaz visible con la que interactúan directamente los usuarios (botones, formularios y pantallas). \n\nPara que una página web funcione de manera integral dentro de una aplicación, se conecta con otros componentes clave:\n\n* **Modelo cliente-servidor:** Cuando escribes una dirección en el navegador (el cliente), este envía una solicitud mediante el protocolo **HTTP** (*Hypertext Transfer Protocol*) hacia un servidor web. El servidor procesa la solicitud y devuelve la página web para que el navegador la renderice.\n* **Conexión con el Backend:** Las páginas web modernas rara vez son estáticas. A menudo utilizan tecnologías como la *Fetch API* para solicitar datos dinámicos a un **Backend** (desarrollado en lenguajes como Python, Java, Node.js, etc.).\n* **Base de datos:** El backend consulta la **Base de datos** para obtener la información solicitada (por ejemplo, los productos de una tienda o los datos de un usuario) y se la devuelve al frontend para que la página web la muestre al usuario.\n\n---\n\n### Resumen para estudiantes\n\nSi estás construyendo una solución digital, recuerda que una página web no es solo un archivo visual; es el punto de entrada al sistema. Su correcta estructuración mediante HTML semántico, estilos adaptables y código interactivo asegura una buena **experiencia de usuario**, sirviendo como la interfaz que comunica a las personas con la lógica del servidor y las bases de datos.",
+    "motivo": "La base local no contenía una respuesta suficiente.",
+    "estado": "pendiente",
+    "concepto_final": "",
+    "contenido_final": "",
+    "fecha_revision": ""
   }
 ]
