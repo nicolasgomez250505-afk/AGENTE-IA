@@ -700,10 +700,18 @@
       "consulta": "que es una api?",
       "origen": "base local",
       "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-04T10:54:29",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es una API?",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
     }
   ],
-  "respuestas_locales": 36,
+  "respuestas_locales": 37,
   "respuestas_locales_por_dominio": {
-    "web": 36
+    "web": 37
   }
 }
