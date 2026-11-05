@@ -1,8 +1,8 @@
 {
-  "total": 44,
+  "total": 52,
   "por_dominio": {
-    "base_datos": 22,
-    "web": 22
+    "base_datos": 27,
+    "web": 25
   },
   "historial": [
     {
@@ -580,10 +580,162 @@
       "consulta": "como puedo hacer una pagina web sobre farmacos?\n",
       "origen": "Gemini",
       "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T06:58:27",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-11-03T06:58:40",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T06:59:10",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T07:01:36",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "Qué es una api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T07:01:59",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T14:17:28",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T14:17:34",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:11:42",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Dime el significado de Frozen",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:12:27",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué significa front-end",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:13:32",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:17:20",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es front-end",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-03T15:19:30",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "Qué es una Api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-04T08:52:13",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es una pagina web?",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-04T08:53:03",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "cuales son sus principales caracteristicas?",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-04T08:55:10",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es una api?",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-04T10:54:29",
+      "dominio": "web",
+      "capacidad": "consulta libre",
+      "consulta": "que es una API?",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-05T07:13:03",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-05T07:15:48",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es una api",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-05T07:21:01",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es una ley de paginas web",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
     }
   ],
-  "respuestas_locales": 28,
+  "respuestas_locales": 39,
   "respuestas_locales_por_dominio": {
-    "web": 28
+    "web": 39
   }
 }
