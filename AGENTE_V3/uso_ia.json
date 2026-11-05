@@ -1,8 +1,8 @@
 {
-  "total": 51,
+  "total": 52,
   "por_dominio": {
     "base_datos": 27,
-    "web": 24
+    "web": 25
   },
   "historial": [
     {
@@ -724,6 +724,14 @@
       "consulta": "que es una api",
       "origen": "base local",
       "motivo": "La base local contenía conocimiento suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-05T07:21:01",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "que es una ley de paginas web",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
     }
   ],
   "respuestas_locales": 39,
