@@ -1,7 +1,7 @@
 {
-  "total": 53,
+  "total": 54,
   "por_dominio": {
-    "base_datos": 27,
+    "base_datos": 28,
     "web": 26
   },
   "historial": [
@@ -738,6 +738,14 @@
       "dominio": "web",
       "capacidad": "enseñar",
       "consulta": "Qué es una página?",
+      "origen": "Gemini",
+      "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-11-10T21:10:53",
+      "dominio": "base_datos",
+      "capacidad": "enseñar",
+      "consulta": "explicame que es una base de datos",
       "origen": "Gemini",
       "motivo": "El concepto no fue encontrado en la base local."
     }
