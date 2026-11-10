@@ -1,7 +1,7 @@
 {
-  "total": 55,
+  "total": 56,
   "por_dominio": {
-    "base_datos": 29,
+    "base_datos": 30,
     "web": 26
   },
   "historial": [
@@ -756,6 +756,14 @@
       "consulta": "explicame que es una base de datos",
       "origen": "Gemini",
       "motivo": "El concepto no fue encontrado en la base local."
+    },
+    {
+      "fecha_hora": "2026-11-10T21:11:53",
+      "dominio": "base_datos",
+      "capacidad": "consulta libre",
+      "consulta": "genera un concepto sobre bases de datos",
+      "origen": "Gemini",
+      "motivo": "La base local no contenía una respuesta suficiente."
     }
   ],
   "respuestas_locales": 39,
