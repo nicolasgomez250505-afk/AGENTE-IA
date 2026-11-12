@@ -764,10 +764,18 @@
       "consulta": "genera un concepto sobre bases de datos",
       "origen": "Gemini",
       "motivo": "La base local no contenía una respuesta suficiente."
+    },
+    {
+      "fecha_hora": "2026-11-12T18:53:19",
+      "dominio": "web",
+      "capacidad": "enseñar",
+      "consulta": "Qué es frontend",
+      "origen": "base local",
+      "motivo": "La base local contenía conocimiento suficiente."
     }
   ],
-  "respuestas_locales": 39,
+  "respuestas_locales": 40,
   "respuestas_locales_por_dominio": {
-    "web": 39
+    "web": 40
   }
 }
